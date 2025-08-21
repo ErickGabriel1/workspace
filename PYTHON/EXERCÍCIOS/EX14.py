@@ -58,7 +58,8 @@ def verificar_cpf():
         return f'O CPF: {cpf[0]}{cpf[1]}{cpf[2]}.{cpf[3]}{cpf[4]}{cpf[5]}.{cpf[6]}{cpf[7]}{cpf[8]}-{cpf[9]}{cpf[10]} é válido!'
     else:
        return f'O CPF: {cpf[0]}{cpf[1]}{cpf[2]}.{cpf[3]}{cpf[4]}{cpf[5]}.{cpf[6]}{cpf[7]}{cpf[8]}-{cpf[9]}{cpf[10]} é inválido'
-    
+
+#Pergunta ao usuário o que ele qual operação ele quer realizar    
 while True:
 
     print('------------------------------------------------------')
