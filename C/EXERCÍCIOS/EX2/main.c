@@ -9,7 +9,3 @@ int main(void){
 	return 0;
 
 }
-
-1) Abrir o CMD na pasta onde está o código fonte
-2) gcc main.c -o main (Compilar)
-3) ./main (Executar)
