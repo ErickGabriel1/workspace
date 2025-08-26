@@ -16,8 +16,8 @@ float peso = 0.0;
 	printf("Matricula: UC25103663\n");
 	printf("Nome: Erick Gabriel Cardoso Oliveira\n");
 
-	printf("Altura: %f\n", altura);
-	printf("Altura: %f\n", peso);
+	printf("A sua altura é: %f\n", altura);
+	printf("O seu peso é: %f\n", peso);
 
 	return 0;
 
