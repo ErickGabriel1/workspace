@@ -22,7 +22,30 @@ int main(void){
     
     IMC = peso/(altura*altura);
     printf("Seu nome: %sSua idade: %d\n", nome, idade);
-    printf("Seu IMC: %.2f", IMC);
+    printf("Seu IMC: %.2f\n", IMC);
+
+    if (IMC < 18.5) {
+
+        puts("Resultado: Abaixo do Peso");
+
+    }
+    
+    else if (IMC >= 18.5 && IMC < 25) {
+        
+        puts("Resultado: Peso Normal");
+
+    }
+    else if (IMC >= 25 && IMC < 30){
+
+        puts("Resultado: Sobrepeso");
+
+    }
+    else{
+
+        puts("Resultado: Obesidade");
+
+    }
+    
     
     return 0;
 
