@@ -35,7 +35,7 @@ int main(void){
         puts("Resultado: Peso Normal");
 
     }
-    else if (IMC >= 25 && IMC < 30){
+    else if (IMC >= 25 && IMC <= 30){
 
         puts("Resultado: Sobrepeso");
 
@@ -45,7 +45,6 @@ int main(void){
         puts("Resultado: Obesidade");
 
     }
-    
     
     return 0;
 
