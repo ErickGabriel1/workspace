@@ -57,7 +57,7 @@ def verificar_cpf():
     if cpf[9] == h1 and cpf[10] == h2:
         return f'O CPF: {cpf[0]}{cpf[1]}{cpf[2]}.{cpf[3]}{cpf[4]}{cpf[5]}.{cpf[6]}{cpf[7]}{cpf[8]}-{cpf[9]}{cpf[10]} é válido!'
     else:
-       return f'O CPF: {cpf[0]}{cpf[1]}{cpf[2]}.{cpf[3]}{cpf[4]}{cpf[5]}.{cpf[6]}{cpf[7]}{cpf[8]}-{cpf[9]}{cpf[10]} é inválido'
+        return f'O CPF: {cpf[0]}{cpf[1]}{cpf[2]}.{cpf[3]}{cpf[4]}{cpf[5]}.{cpf[6]}{cpf[7]}{cpf[8]}-{cpf[9]}{cpf[10]} é inválido'
 
 #Pergunta ao usuário o que ele qual operação ele quer realizar    
 while True:
@@ -77,4 +77,4 @@ while True:
         print(verificar_cpf())
 
     else:
-        print('Erro! Tente novamente!')
+        print('Erro! Tente novamente!')  
