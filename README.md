@@ -1,2 +1,2 @@
 # workspace
-Exercícios e Projetos
+Exercícios e aprendizados em Python
