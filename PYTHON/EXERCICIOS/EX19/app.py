@@ -1,0 +1,23 @@
+words = [
+    "abacate","banco","cachorro","dado","elefante","faca","gato","hotel","ilha","jogo",
+    "kilo","luz","manga","navio","olho","pato","quadro","rosa","sapato","tigre",
+    "uva","vaca","watt","xale","yoga","zebra","amigo","bola","carro","doce",
+    "estrela","fogo","garrafa","homem","ideia","janela","kiwi","lapis","menina","noite",
+    "ouro","pessoa","queijo","rede","sol","terra","urso","vento","wall","xarope",
+    "yeti","zero","anjo","bota","casa","dente","encontro","flor","gelo","horizonte",
+    "igreja","joia","livro","moeda","nuvem","objeto","prato","queda","rio","sorriso",
+    "tempo","urso","vulcao","whisky","xadrez","youtuber","zoologico","algodao","banco","chuva",
+    "dedo","energia","fome","grilo","harpa","ilha","jabuti","lago","macaco","navalha",
+    "oleo","palco","quadro","rede","sal","trem","uva","valente","wifi","xadrez",
+    "yamaha","zangao","aviao","barco","canoa","dardo","escada","fada","gol","haste",
+    "indio","jornal","leite","mesa","ninho","olhar","peixe","quilo","raiz","sapato",
+    "tocha","umbigo","vulto","waffle","xaxim","yeti","zangado","areia","bala","cinto",
+    "domino","espada","fruta","guerra","horta","ilha","janela","lua","mar","noz",
+    "oculos","pente","quina","rosa","sol","trigo","urso","vela","wifi","xilofone",
+    "yoga","zelo","agua","brilho","copo","dedal","escova","feijao","garfo","humor",
+    "ideia","jogo","lobo","muro","norte","onda","pao","quimica","rosa","sino",
+    "tela","urna","vidro","watt","xarope","yeti","zebra","atomo","bebe","caderno",
+    "dama","estojo","foco","gelo","hotel","ilha","janota","lirio","mao","navio",
+    "ouro","poste","quadro","relva","semente","touro","urso","vela","whey","xis",
+    "yakisoba","zumbi","abismo","barro","corte","dado","eco","fatia","golfinho","harpa"
+]
