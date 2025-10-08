@@ -13,7 +13,8 @@ int main()
     int bombs_found = 0;
     printf("Enter the size of your minefield: ");
     scanf("%d", &choice);
-    int map [choice][choice];
+    char map [choice][choice];
+    char hidden_map [choice][choice];
 
     for (int c = 0; c < choice;c++)
         {
@@ -23,35 +24,52 @@ int main()
 
                 if (random_n >= difficult) 
                 {
-                    map[c][i] = 1;
-                    printf("%d ", map[c][i]);
+                    map[c][i] = '1';
+                    hidden_map[c][i] = '#';
                     n_bombs++;
                 }
 
                 else if (random_n < difficult)
                 {
-                    map[c][i] = 0;
-                    printf("%d ", map[c][i]);
+                    map[c][i] = '0';
+                    hidden_map[c][i] = '#';
                 }
                 
+            }
+        }
+
+
+    while (1)
+    {
+
+        for (int c = 0; c < choice;c++)
+        {
+            for(int i = 0; i < choice; i++)
+            {   
+                if (hidden_map[c][i] == '0')
+                {
+                    printf("\033[32m%c\033[0m  ", hidden_map[c][i]);
+                }
+                else
+                {
+                    printf("%c  ", hidden_map[c][i]);
+                }
             }
             printf("\n");
         }
 
-    while (1)
-    {
         int counter = 0;
         
-
         int row, column;
         printf("\nEnter the row (0-%d): ", choice-1);
         scanf("%d", &row);
         printf("\nEnter the column (0-%d): ", choice-1);
         scanf("%d", &column);
 
-        if (map[row][column] == 0)
+        if (map[row][column] == '0')
         {
-
+            bombs_found++;
+            hidden_map[row][column] = map[row][column];
             for (int x = row-1; x <= row+1; x++)
             {
                 for (int y = column-1; y <= column+1; y++)
@@ -60,14 +78,19 @@ int main()
                         continue;
                     if (x == row && y == column)
                         continue;
-                    if (map[x][y] == 1)
+                    if (map[x][y] == '1')
                         counter++;
+                    else {
+                        hidden_map[x][y] = map[x][y];
+                        bombs_found++;
+                    }
                         
                 }
             }
-            bombs_found++;
+            
+            system("cls");
             printf("\nThere are %d bombs around the coordinate (%d, %d)\n", counter, row, column);
-            printf("number of bombs found: %d", bombs_found);
+            printf("number of bombs found: %d\n", bombs_found);
 
             if (n_bombs == bombs_found){
                 printf("\nYou win!");
@@ -77,14 +100,13 @@ int main()
         }
         else
         {
-            printf("You lose!");
+            printf("You lose!\n");
+
+
+
             return 0;
         }
 
 
     }
-
-        
-
-
 }
